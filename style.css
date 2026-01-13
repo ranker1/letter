@@ -96,16 +96,21 @@ body {
 
 .paper {
     background: white;
-    width: 80%;
+    width: 85%;              /* Slightly wider on mobile */
     max-width: 500px;
-    height: 90%;
+    max-height: 70vh;        /* Crucial: Limits height so it fits on screen */
+    overflow-y: auto;        /* Crucial: Adds the scrollbar if text is long */
     padding: 20px;
-    border: 4px double var(--letter-border); /* The beautiful red border */
+    border: 4px double var(--letter-border);
     border-radius: 10px;
     position: relative;
     box-shadow: 0 0 30px rgba(255,255,255,0.8);
     transform: scale(0.8);
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* Make the scrollbar look nice (optional, for Chrome/Safari) */
+    scrollbar-width: thin;
+    scrollbar-color: var(--letter-border) transparent;
 }
 
 .letter-container.visible .paper {
