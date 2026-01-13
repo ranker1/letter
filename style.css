@@ -154,20 +154,3 @@ p {
 .br { bottom: 10px; right: 10px; transform: rotate(135deg); }
 
 .hidden { display: none; }
-
-/* --- MOBILE TWEAKS --- */
-@media (max-width: 600px) {
-    .paper {
-        padding: 20px;       /* Less padding on phones */
-        width: 90%;          /* Use more screen width */
-    }
-    
-    h1 {
-        font-size: 2rem;     /* Slightly smaller header */
-        margin-top: 10px;
-    }
-    
-    p {
-        font-size: 1rem;     /* Readable but compact font */
-    }
-}
